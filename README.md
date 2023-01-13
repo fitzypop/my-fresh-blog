@@ -1,22 +1,3 @@
-<p align="center">
-  <img src="assets/gh-banner.png" alt="Fresh Blog Banner">
-</p>
-
-<br/>
-<div align="center">
-  <a href="https://twitter.com/littlesticksdev">
-  <img src="assets/twitter-badge.svg" alt="Follow Little Sticks on Twitter"/>
-</a>
-  <a href="https://littlesticks.lemonsqueezy.com/checkout/buy/ae636a97-0b45-4285-8250-41651a104b72">
-    <img src="assets/sponsor-badge.svg" alt="Sponsor This Repo" />
-  </a>
-  <a href="https://littlesticks.dev/discord">
-    <img src="assets/discord-badge.svg" alt="Join our Discord" />
-  </a>
-  
-</div>
-<br/>
-
 # Fresh Blog
 
 [![Made with Fresh](https://fresh.deno.dev/fresh-badge-dark.svg)](https://fresh.deno.dev)
@@ -25,9 +6,9 @@ This is a minimal blog template using the awesome framework [Fresh](https://fres
 
 ## Usage
 
-### Start the project:
+### Start the project
 
-```
+```sh
 deno task start
 ```
 

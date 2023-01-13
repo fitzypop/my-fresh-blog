@@ -5,6 +5,7 @@ import { loadPost, Post } from "../../utils/posts.ts";
 import { Header } from "../../components/Header.tsx";
 import { ServerCodePage } from "../_404.tsx";
 
+// TODO use marked instead of gfm
 interface Data {
   post: Post | null;
 }
