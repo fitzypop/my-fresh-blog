@@ -25,20 +25,22 @@ export default function App({ Component }: AppProps) {
         </style>
 
         {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
+        {/* <meta property="og:type" content="website" /> */}
 
         <meta property="og:title" content={site.title} />
         <meta property="og:description" content={site.description} />
         <meta property="og:image" content={site.ogImage} />
 
         {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
+        {
+          /* <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content={site.title} />
         <meta property="twitter:description" content={site.description} />
-        <meta property="twitter:image" content={site.ogImage} />
+        <meta property="twitter:image" content={site.ogImage} /> */
+        }
       </Head>
       <div
-        class="min-h-screen grid grid-cols-1"
+        class="min-h-screen grid grid-cols-1 bg-gray-900 text-white"
         style="grid-template-rows: auto 1fr auto;"
       >
         <Component />
