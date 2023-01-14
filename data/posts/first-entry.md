@@ -8,10 +8,10 @@ published_at: 2023-01-13
 Sup. I'm Fitzypop, and I've never written an actual blog site before. Okay, I technically didn't build it, and used a Template off 
 github, but everything after that initial template is all my work.
 
-If this was a serious blog, I would have gone with a mkdocs. Or maybe hugo, or some other template / markdown based system.
-
+If this was a serious blog, I would have gone with a mkdocs. Or maybe hugo, or some other template / markdown based system. 
+But I'm more interseted in writing and maintaining a Deno website.
 Writing a site with deno is interesting too me. There's alittle more challenge, maintaning my own site, system, content, 
-and really learning TypeScript for real.
+and learning TypeScript for real.
 
 My current plan is to take this template blog site, and add new features as I encounter more question around Deno, 
 Fresh, or other web development concepts.
@@ -21,7 +21,7 @@ Fresh, or other web development concepts.
 - [x] Fix markdown render
   - Looks like gfm doesn't support checklists?
 - [ ] Learn Tailwind
-- [ ] Restyle header
+- [x] Restyle header
 - [ ] Social Links and Icons
 - [ ] Server Side image for Posts?
 - [ ] SEO ?
