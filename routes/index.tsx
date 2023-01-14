@@ -1,16 +1,15 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { listPosts, Post } from "../utils/posts.ts";
-import { State } from "../utils/state.ts";
 import { Container } from "../components/Container.tsx";
 import { HomeHeader } from "../components/HomeHeader.tsx";
 import { PostPreview } from "../components/PostPreview.tsx";
 import { Header } from "../components/Header.tsx";
 
-interface Data extends State {
+interface Data {
   posts: Post[];
 }
 
-export const handler: Handlers<Data, State> = {
+export const handler: Handlers<Data> = {
   async GET(_req, ctx) {
     const posts = await listPosts();
     return ctx.render({ ...ctx.state, posts });
@@ -21,7 +20,7 @@ export default function Home(props: PageProps<Data>) {
   const { posts } = props.data;
   return (
     <>
-      <body class="bg-gray-400 font-sans leading-normal tracking-normal">
+      <body class="font-sans leading-normal tracking-normal">
         <HomeHeader />
         <main>
           <Container>

@@ -18,7 +18,8 @@ Fresh, or other web development concepts.
 
 ## MVP
 
-- [ ] Fix markdown render
+- [x] Fix markdown render
+  - Looks like gfm doesn't support checklists?
 - [ ] Learn Tailwind
 - [ ] Restyle header
 - [ ] Social Links and Icons

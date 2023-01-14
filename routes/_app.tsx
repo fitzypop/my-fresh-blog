@@ -3,12 +3,6 @@ import { Head } from "$fresh/runtime.ts";
 import { Footer } from "../components/Footer.tsx";
 import { site } from "../data/site.ts";
 
-const CSS = `::selection {
-  background-color: #000;
-  color: #fff;
-}
-`;
-
 export default function App({ Component }: AppProps) {
   return (
     <>
@@ -19,17 +13,15 @@ export default function App({ Component }: AppProps) {
         <meta name="description" content={site.description} />
         {/* Theme */}
         <meta name="theme-color" content="#000" />
-        {/* Global Styles that couldn't be loaded through Twind */}
-        <style>
-          {CSS}
-        </style>
 
         {/* Open Graph / Facebook */}
         {/* <meta property="og:type" content="website" /> */}
 
-        <meta property="og:title" content={site.title} />
+        {
+          /* <meta property="og:title" content={site.title} />
         <meta property="og:description" content={site.description} />
-        <meta property="og:image" content={site.ogImage} />
+        <meta property="og:image" content={site.ogImage} /> */
+        }
 
         {/* Twitter */}
         {
@@ -40,7 +32,7 @@ export default function App({ Component }: AppProps) {
         }
       </Head>
       <div
-        class="min-h-screen grid grid-cols-1 bg-gray-900 text-white"
+        class="min-h-screen grid grid-cols-1 bg-[#131516] text-white"
         style="grid-template-rows: auto 1fr auto;"
       >
         <Component />
