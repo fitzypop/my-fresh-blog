@@ -32,7 +32,7 @@ export default function App({ Component }: AppProps) {
         }
       </Head>
       <div
-        class="min-h-screen grid grid-cols-1 bg-[#131516] text-white"
+        class="min-h-screen grid grid-cols-1 bg-default text-white"
         style="grid-template-rows: auto 1fr auto;"
       >
         <Component />

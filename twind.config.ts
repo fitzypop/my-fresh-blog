@@ -2,12 +2,13 @@ import { Options } from "$fresh/plugins/twind.ts";
 
 export default {
   selfURL: import.meta.url,
-  setup: {
-    theme: {
+  theme: {
+    extend: {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        // "darkgreen": "#007645",
+        "darkgreen": "#004d1a",
+        "default": "#131516",
       },
     },
   },

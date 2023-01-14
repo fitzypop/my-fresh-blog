@@ -8,7 +8,3 @@ export const site = {
   // The url of the source code for the site, used in the footer.
   viewSourceUrl: "https://github.com/fitzypop/my-fresh-blog",
 };
-
-export const settings = {
-  showLittleSticksPlug: true,
-};
