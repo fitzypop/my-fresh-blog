@@ -3,11 +3,18 @@ import { site } from "../data/site.ts";
 
 export function HomeHeader() {
   return (
-    <header class="bg-gray-700 relative min-h-[30vh]">
+    <header class="bg-gray-700 relative min-h-[30vh] text-white">
       <Container>
-        <h1 class="text-4xl lg:text-8xl font-bold absolute bottom-6 flex items-center text-white">
-          {site.title}
-        </h1>
+        <div class="flex items-center ">
+          <h1 class="text-4xl lg:text-8xl font-bold absolute bottom-20">
+            {site.title}
+          </h1>
+          <div id="socals" class="absolute bottom-5">
+            <h2 class="text-1xl">
+              Sup. I'm Fitzypop. I write code, and blogs sometimes...
+            </h2>
+          </div>
+        </div>
       </Container>
     </header>
   );

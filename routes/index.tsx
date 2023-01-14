@@ -1,10 +1,10 @@
-
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { listPosts, Post } from "../utils/posts.ts";
 import { State } from "../utils/state.ts";
 import { Container } from "../components/Container.tsx";
 import { HomeHeader } from "../components/HomeHeader.tsx";
 import { PostPreview } from "../components/PostPreview.tsx";
+import { Header } from "../components/Header.tsx";
 
 interface Data extends State {
   posts: Post[];
@@ -21,14 +21,16 @@ export default function Home(props: PageProps<Data>) {
   const { posts } = props.data;
   return (
     <>
-     <HomeHeader />
-     <main>
-      <Container>
-        <ul class="mt-16">
-          {posts.map((post) => <PostPreview post={post} />)}
-        </ul>
-      </Container>
-     </main>
+      <body class="bg-gray-400 font-sans leading-normal tracking-normal">
+        <HomeHeader />
+        <main>
+          <Container>
+            <ul class="mt-16">
+              {posts.map((post) => <PostPreview post={post} />)}
+            </ul>
+          </Container>
+        </main>
+      </body>
     </>
   );
 }

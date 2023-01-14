@@ -1,8 +1,10 @@
-# Fresh Blog
+# My Fresh Blog
 
 [![Made with Fresh](https://fresh.deno.dev/fresh-badge-dark.svg)](https://fresh.deno.dev)
 
 This is a minimal blog template using the awesome framework [Fresh](https://fresh.deno.dev) from Deno.
+
+Template cloned from [littlesticks/fresh-blog](https://github.com/littlesticks/fresh-blog).
 
 ## Usage
 
