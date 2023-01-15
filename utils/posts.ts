@@ -11,7 +11,7 @@ export async function loadPost(slug: string): Promise<Post | null> {
   let text: string;
   try {
     text = await Deno.readTextFile(
-      `./data/posts/${decodeURIComponent(slug)}.md`,
+      `./posts/${decodeURIComponent(slug)}.md`,
     );
   } catch (err) {
     if (err instanceof Deno.errors.NotFound) {
@@ -32,7 +32,7 @@ export async function loadPost(slug: string): Promise<Post | null> {
 
 export async function listPosts(): Promise<Post[]> {
   const promises = [];
-  for await (const entry of Deno.readDir("./data/posts")) {
+  for await (const entry of Deno.readDir("./posts")) {
     const slug = entry.name.replace(".md", "");
     promises.push(loadPost(slug));
   }

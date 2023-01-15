@@ -1,5 +1,5 @@
 import { Container } from "./Container.tsx";
-import { site } from "../data/site.ts";
+import { site } from "../utils/site.ts";
 
 export function Footer() {
   return (

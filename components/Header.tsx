@@ -1,4 +1,4 @@
-import { site } from "../data/site.ts";
+import { site } from "../utils/site.ts";
 
 export function Header() {
   return (
