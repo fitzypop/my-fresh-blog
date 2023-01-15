@@ -17,7 +17,7 @@ export function Footer() {
         </div>
         <div class="text-center">
           <p>
-            &copy; {new Date().getFullYear()} {site.copyrightName} •{" "}
+            &copy; 2023 {site.copyrightName} •{" "}
             <a class="hover:text-underline" href={site.viewSourceUrl}>
               View Source
             </a>
