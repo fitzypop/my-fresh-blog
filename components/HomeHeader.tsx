@@ -3,7 +3,7 @@ import { site } from "../utils/site.ts";
 
 export function HomeHeader() {
   return (
-    <header class="bg-darkgreen relative min-h-[20vh]">
+    <header class="bg-darkgreen relative min-h-[25vh]">
       <Container>
         <div class="flex items-center ">
           <h1 class="text-4xl lg:text-8xl font-bold absolute bottom-20">
