@@ -7,4 +7,5 @@ export const site = {
   copyrightName: "Fitzypop's Blog",
   // The url of the source code for the site, used in the footer.
   viewSourceUrl: "https://github.com/fitzypop/my-fresh-blog",
+  postsPath: "./content/posts",
 };
