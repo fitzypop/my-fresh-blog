@@ -6,21 +6,23 @@ export function ServerCodePage(
   return (
     <>
       <Header />
-      <section class="w-full flex items-center justify-center">
-        <div class="text-center">
-          <h1 class="text-6xl md:text-9xl font-extrabold">
-            {props.serverCode}
-          </h1>
+      <main>
+        <section class="w-full flex items-center justify-center">
+          <div class="text-center">
+            <h1 class="text-6xl md:text-9xl font-extrabold">
+              {props.serverCode}
+            </h1>
 
-          <p class="p-4 text-2xl md:text-3xl">
-            {props.codeDescription}
-          </p>
+            <p class="p-4 text-2xl md:text-3xl">
+              {props.codeDescription}
+            </p>
 
-          <p class="p-4">
-            <a href="/" class="hover:underline">Back to the Homepage</a>
-          </p>
-        </div>
-      </section>
+            <p class="p-4">
+              <a href="/" class="hover:underline">Back to the Homepage</a>
+            </p>
+          </div>
+        </section>
+      </main>
     </>
   );
 }

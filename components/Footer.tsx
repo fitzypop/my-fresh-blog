@@ -1,5 +1,5 @@
+import { GitHub } from "../components/Github.tsx";
 import { site } from "../utils/site.ts";
-import { GitHub } from "./Github.tsx";
 
 export function Footer() {
   return (
@@ -12,7 +12,7 @@ export function Footer() {
           <img
             width="197"
             height="37"
-            src="./fresh-badge-dark.svg"
+            src="/fresh-badge-dark.svg"
           />
         </a>
         <a
