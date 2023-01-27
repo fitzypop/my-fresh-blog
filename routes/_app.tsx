@@ -31,13 +31,15 @@ export default function App({ Component }: AppProps) {
         <meta property="twitter:image" content={site.ogImage} /> */
         }
       </Head>
-      <div
-        class="min-h-screen grid grid-cols-1 bg-default text-white"
-        style="grid-template-rows: auto 1fr auto;"
-      >
-        <Component />
-        <Footer />
-      </div>
+      <body class="font-sans leading-normal tracking-normal">
+        <div
+          class="min-h-screen grid grid-cols-1 bg-default text-white"
+          style="grid-template-rows: auto 1fr auto;"
+        >
+          <Component />
+          <Footer />
+        </div>
+      </body>
     </>
   );
 }

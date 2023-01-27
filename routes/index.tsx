@@ -19,16 +19,14 @@ export default function Home(props: PageProps<Data>) {
   const { posts } = props.data;
   return (
     <>
-      <body class="font-sans leading-normal tracking-normal">
-        <HomeHeader />
-        <main>
-          <Container>
-            <ul>
-              {posts.map((post) => <PostPreview post={post} />)}
-            </ul>
-          </Container>
-        </main>
-      </body>
+      <HomeHeader />
+      <main>
+        <Container>
+          <ul>
+            {posts.map((post) => <PostPreview post={post} />)}
+          </ul>
+        </Container>
+      </main>
     </>
   );
 }
