@@ -8,6 +8,8 @@ export function Footer() {
         <a
           class="flex items-center gap-2 text-gray-700"
           href="https://fresh.deno.dev"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             width="197"
@@ -18,6 +20,8 @@ export function Footer() {
         <a
           class="hover:underline flex gap-2 items-center"
           href={site.viewSourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <GitHub class="h-5 w-5 text-gray-500" />
           Source

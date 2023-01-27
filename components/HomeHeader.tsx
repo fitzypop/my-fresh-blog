@@ -6,14 +6,14 @@ export function HomeHeader() {
   return (
     <header
       id="header"
-      class="pb-3 bg-gradient-to-bl from-orange-500 to-sky-500"
+      class="pb-3 bg-gradient-to-tl from-orange-500 to-sky-500"
     >
       <Container>
         <div class="flex flex-col items-center justify-between mt-10 w-full">
           <div class="flex flex-row gap-5 items-center ">
             <img
-              src="/me.jpg"
-              alt="luca casonato"
+              src="/cool.jpeg"
+              alt="avatar"
               width="500"
               height="500"
               class="w(24 md:32) h(24 md:32) rounded-full bg-white"
@@ -29,6 +29,8 @@ export function HomeHeader() {
           <span class="flex flex-row items-center mt-4 gap-4">
             <a
               class="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/fitzypop"
             >
               <GitHub class="h-7 w-7 text-white hover:text-blue-300" />
