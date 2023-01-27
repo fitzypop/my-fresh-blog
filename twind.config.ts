@@ -1,4 +1,5 @@
 import { Options } from "$fresh/plugins/twind.ts";
+import * as colors from "twind/colors";
 
 export default {
   selfURL: import.meta.url,
@@ -9,6 +10,7 @@ export default {
         current: "currentColor",
         "darkgreen": "#004d1a",
         "default": "#131516",
+        ...colors,
       },
     },
   },

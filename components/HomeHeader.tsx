@@ -4,7 +4,10 @@ import { GitHub } from "./Github.tsx";
 
 export function HomeHeader() {
   return (
-    <header id="header" class="bg-darkgreen pb-3">
+    <header
+      id="header"
+      class="pb-3 bg-gradient-to-bl from-orange-500 to-sky-500"
+    >
       <Container>
         <div class="flex flex-col items-center justify-between mt-10 w-full">
           <div class="flex flex-row gap-5 items-center ">
