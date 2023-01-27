@@ -1,29 +1,28 @@
-import { Container } from "./Container.tsx";
 import { site } from "../utils/site.ts";
+import GitHub from "./Github.tsx";
 
-export function Footer() {
+export default function Footer() {
   return (
-    <footer class="w-full pt-10 pb-4">
-      <Container>
-        <div class="flex items-center justify-center mb-3">
-          <a href="https://fresh.deno.dev">
-            <img
-              width="197"
-              height="37"
-              src="https://fresh.deno.dev/fresh-badge-dark.svg"
-              alt="Made with Fresh"
-            />
-          </a>
-        </div>
-        <div class="text-center">
-          <p>
-            &copy; 2023 {site.copyrightName} •{" "}
-            <a class="hover:text-underline" href={site.viewSourceUrl}>
-              View Source
-            </a>
-          </p>
-        </div>
-      </Container>
+    <footer class="w-full mx-auto mt-24 sm:!mt-28 mb-8 flex items-center justify-center">
+      <span class="flex items-center gap-4">
+        <a
+          class="flex items-center gap-2 text-gray-700"
+          href="https://fresh.deno.dev"
+        >
+          <img
+            width="197"
+            height="37"
+            src="./fresh-badge-dark.svg"
+          />
+        </a>
+        <a
+          class="hover:underline flex gap-2 items-center"
+          href={site.viewSourceUrl}
+        >
+          <GitHub class="h-5 w-5 text-gray-500" />
+          Source
+        </a>
+      </span>
     </footer>
   );
 }

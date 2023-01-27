@@ -3,7 +3,6 @@ import { listPosts, Post } from "../utils/posts.ts";
 import { Container } from "../components/Container.tsx";
 import { HomeHeader } from "../components/HomeHeader.tsx";
 import { PostPreview } from "../components/PostPreview.tsx";
-import { Header } from "../components/Header.tsx";
 
 interface Data {
   posts: Post[];
