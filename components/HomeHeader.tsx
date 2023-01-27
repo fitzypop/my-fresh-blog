@@ -16,7 +16,7 @@ export function HomeHeader() {
               alt="avatar"
               width="500"
               height="500"
-              class="w(24 md:32) h(24 md:32) rounded-full bg-white"
+              class="w(24 md:32) h(24 md:32) rounded-full bg-black"
             />
             <h1 class="text-5xl lg:text-6xl font-bold">
               {site.title}
