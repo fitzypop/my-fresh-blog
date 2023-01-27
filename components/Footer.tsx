@@ -1,7 +1,7 @@
 import { site } from "../utils/site.ts";
-import GitHub from "./Github.tsx";
+import { GitHub } from "./Github.tsx";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer class="w-full mx-auto mt-24 sm:!mt-28 mb-8 flex items-center justify-center">
       <span class="flex items-center gap-4">

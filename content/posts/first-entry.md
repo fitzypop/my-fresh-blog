@@ -23,6 +23,8 @@ Fresh, or other web development concepts.
 - [ ] Learn Tailwind
 - [x] Restyle header
 - [ ] Social Links and Icons
+  - Github Icon
+  - Linkdin Icon
 - [ ] Server Side image for Posts?
 - [ ] SEO ?
 - [ ] ???

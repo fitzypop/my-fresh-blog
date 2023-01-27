@@ -1,4 +1,4 @@
-export default function GitHub(props: { class?: string }) {
+export function GitHub(props: { class?: string }) {
   return (
     <svg
       class={props.class}
