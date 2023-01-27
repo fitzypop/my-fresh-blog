@@ -6,7 +6,7 @@ export function HomeHeader() {
   return (
     <header
       id="header"
-      class="pb-3 bg-gradient-to-tl from-orange-500 to-sky-500"
+      class="pb-3 bg-gradient-to-tl from-orange-500 to-sky-500 text-black"
     >
       <Container>
         <div class="flex flex-col items-center justify-between mt-10 w-full">
@@ -33,7 +33,7 @@ export function HomeHeader() {
               rel="noopener noreferrer"
               href="https://github.com/fitzypop"
             >
-              <GitHub class="h-7 w-7 text-white hover:text-blue-300" />
+              <GitHub class="h-7 w-7 text-black hover:text-gray-600" />
               {/* TODO Add linkdin and email icons */}
             </a>
           </span>
