@@ -4,9 +4,9 @@ import { site } from "../utils/site.ts";
 export function Footer() {
   return (
     <footer class="w-full mx-auto mt-24 sm:!mt-28 mb-8 flex items-center justify-center">
-      <span class="flex items-center gap-4">
+      <span class="mx-auto max-w-screen-lg flex items-center justify-center gap-5">
         <a
-          class="flex items-center gap-2"
+          class=""
           href="https://fresh.deno.dev"
           target="_blank"
           rel="noopener noreferrer"
