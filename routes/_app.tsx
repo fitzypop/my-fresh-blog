@@ -21,6 +21,7 @@ export default function App({ Component }: AppProps) {
         <meta property="og:description" content={site.description} />
         <meta property="og:image" content={site.ogImage} />
         <meta property="og:url" content="https://fitzypop.deno.dev" />
+        <meta property="og:locale" content="en_US" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
