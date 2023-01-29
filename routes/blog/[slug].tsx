@@ -18,33 +18,35 @@ export const handler: Handlers<Data> = {
 
 export default function PostPage(props: PageProps<Data>) {
   const { post } = props.data;
-  return post
-    ? (
-      <>
-        <Header />
-        <main>
-          <Container>
-            <h1 class="font-bold text-5xl pt-12">{post.title}</h1>
-            <time class="inline-block mt-4">
-              {new Date(post.publishedAt).toLocaleDateString("en-us", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </time>
-            <style dangerouslySetInnerHTML={{ __html: gfm.CSS }} />
-            <article
-              class="mt-12 markdown-body !bg-default !text-white"
-              dangerouslySetInnerHTML={{ __html: gfm.render(post.content) }}
+  return (
+    <>
+      <Header />
+      <main>
+        {post
+          ? (
+            <Container>
+              <h1 class="font-bold text-5xl pt-12">{post.title}</h1>
+              <time class="inline-block mt-4">
+                {new Date(post.publishedAt).toLocaleDateString("en-us", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+              <style dangerouslySetInnerHTML={{ __html: gfm.CSS }} />
+              <article
+                class="mt-12 markdown-body !bg-default !text-white"
+                dangerouslySetInnerHTML={{ __html: gfm.render(post.content) }}
+              />
+            </Container>
+          )
+          : (
+            <ServerCodePage
+              serverCode={404}
+              codeDescription={"We couldn't find the post you're looking for."}
             />
-          </Container>
-        </main>
-      </>
-    )
-    : (
-      <ServerCodePage
-        serverCode={404}
-        codeDescription={"We couldn't find the post you're looking for."}
-      />
-    );
+          )}
+      </main>
+    </>
+  );
 }

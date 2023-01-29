@@ -22,7 +22,9 @@ export default function App({ Component }: AppProps) {
         <meta property="og:image" content={site.ogImage} />
         <meta
           property="og:url"
-          content={`https://fitzypop.deno.dev/${window.location.pathname}`}
+          content={`https://fitzypop.deno.dev/${
+            IS_BROWSER ? window.location.pathname : ""
+          }`}
         />
         <meta property="og:locale" content="en_US" />
 
