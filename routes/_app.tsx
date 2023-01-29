@@ -15,21 +15,18 @@ export default function App({ Component }: AppProps) {
         <meta name="theme-color" content="#000" />
 
         {/* Open Graph / Facebook */}
-        {/* <meta property="og:type" content="website" /> */}
+        <meta property="og:type" content="website" />
 
-        {
-          /* <meta property="og:title" content={site.title} />
+        <meta property="og:title" content={site.title} />
         <meta property="og:description" content={site.description} />
-        <meta property="og:image" content={site.ogImage} /> */
-        }
+        <meta property="og:image" content={site.ogImage} />
+        <meta property="og:url" content="https://fitzypop.deno.dev" />
 
         {/* Twitter */}
-        {
-          /* <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content={site.title} />
         <meta property="twitter:description" content={site.description} />
-        <meta property="twitter:image" content={site.ogImage} /> */
-        }
+        <meta property="twitter:image" content={site.ogImage} />
       </Head>
       <body class="font-sans leading-normal tracking-normal">
         <div
