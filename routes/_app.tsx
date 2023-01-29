@@ -1,5 +1,5 @@
 import { AppProps } from "$fresh/server.ts";
-import { Head } from "$fresh/runtime.ts";
+import { Head, IS_BROWSER } from "$fresh/runtime.ts";
 import { site } from "../utils/site.ts";
 import { Footer } from "../components/Footer.tsx";
 
@@ -20,7 +20,12 @@ export default function App({ Component }: AppProps) {
         <meta property="og:title" content={site.title} />
         <meta property="og:description" content={site.description} />
         <meta property="og:image" content={site.ogImage} />
-        <meta property="og:url" content="https://fitzypop.deno.dev" />
+        <meta
+          property="og:url"
+          content={`https://fitzypop.deno.dev/${
+            IS_BROWSER ? window.location.pathname : ""
+          }`}
+        />
         <meta property="og:locale" content="en_US" />
 
         {/* Twitter */}
