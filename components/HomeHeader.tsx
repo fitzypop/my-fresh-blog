@@ -1,6 +1,7 @@
 import { Container } from "./Container.tsx";
 import { site } from "../utils/site.ts";
-import { GitHub } from "./Github.tsx";
+import { Github } from "./Github.tsx";
+import { Linkedin } from "./Linkedin.tsx";
 
 export function HomeHeader() {
   return (
@@ -23,22 +24,18 @@ export function HomeHeader() {
             </h1>
           </div>
 
-          <span class="w-full flex flex-row items-center justify-start pl-5 mt-8">
+          <div class="w-full flex flex-row items-center justify-start pl-5 mt-8">
             <h2 class="text-2xl">
               Sup. I'm Fitzypop. I write code, and blogs sometimes...
             </h2>
-          </span>
-          <span class="flex flex-row items-center justify-center mt-4 gap-4">
-            <a
-              class="hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/fitzypop"
-            >
-              <GitHub class="h-8 w-8 text-black hover:text-gray-600" />
-              {/* TODO Add linkdin and email icons */}
-            </a>
-          </span>
+          </div>
+          <div class="w-full flex flex-row items-center justify-start pl-5 mt-4 gap-4">
+            <Github
+              class="h-8 w-8 text-black hover:text-gray-600"
+              to="https://github.com/fitzypop"
+            />
+            <Linkedin class="h-8 w-8 text-black hover:text-gray-600" />
+          </div>
         </div>
       </Container>
     </header>

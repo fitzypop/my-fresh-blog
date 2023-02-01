@@ -6,7 +6,7 @@ export function PostPreview(props: { post: Post }) {
     <li class="border-t">
       <a
         href={`/blog/${post.slug}`}
-        class="py-12 pl-20 group grid sm:grid-cols-3"
+        class="py-12 pl-5 group grid sm:grid-cols-3"
       >
         <time class="">
           {new Date(post.publishedAt).toLocaleDateString("en-us", {
@@ -15,7 +15,7 @@ export function PostPreview(props: { post: Post }) {
             day: "numeric",
           })}
         </time>
-        <div class="pl-5 sm:col-span-2">
+        <div class="sm:col-span-2">
           <h2 class="text-2xl font-bold group-hover:underline">{post.title}</h2>
         </div>
       </a>
