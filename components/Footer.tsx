@@ -16,11 +16,10 @@ export function Footer() {
           src="/fresh-badge-dark.svg"
         />
       </a>
-      <div class="bg-[#1C1C1C] w-[120px] h-[37px] grid place-items-center">
-        <Github class="h-5 w-5 text-white">
-          Source
-        </Github>
-      </div>
+
+      <Github class="h-5 w-5 text-white">
+        Source
+      </Github>
     </footer>
   );
 }
