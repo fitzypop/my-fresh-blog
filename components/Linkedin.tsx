@@ -1,15 +1,15 @@
-import { ComponentChildren } from "preact";
+import { JSX } from "preact";
 import { site } from "../utils/site.ts";
 
 export function Linkedin(
-  props: { class?: string; to?: string; children?: ComponentChildren },
-) {
+  props: { class?: string },
+): JSX.Element {
   return (
     <a
       class="hover:underline"
       target="_blank"
       rel="noopener noreferrer"
-      href={props?.to || site.linkedinUrl}
+      href={site.linkedinUrl}
     >
       <svg
         class={props.class}
@@ -46,7 +46,6 @@ export function Linkedin(
           </g>
         }
       </svg>
-      {props.children}
     </a>
   );
 }
