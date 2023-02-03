@@ -2,7 +2,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { listPosts, Post } from "../utils/posts.ts";
 import { Container } from "../components/Container.tsx";
 import { HomeHeader } from "../components/HomeHeader.tsx";
-import { PostPreview } from "../components/PostPreview.tsx";
+import { Layout } from "../components/Layout.tsx";
 
 interface Data {
   posts: Post[];
@@ -19,14 +19,36 @@ export default function Home(props: PageProps<Data>) {
   const { posts } = props.data;
   return (
     <>
-      <HomeHeader />
-      <main>
-        <Container>
-          <ul>
-            {posts.map((post) => <PostPreview post={post} />)}
-          </ul>
-        </Container>
-      </main>
+      <Layout>
+        <HomeHeader />
+        <main>
+          <Container>
+            <ul>
+              {posts.map((post) => (
+                <li class="border-t">
+                  <a
+                    href={`/blog/${post.slug}`}
+                    class="py-12 pl-5 group grid sm:grid-cols-3"
+                  >
+                    <time class="">
+                      {new Date(post.publishedAt).toLocaleDateString("en-us", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </time>
+                    <div class="sm:col-span-2">
+                      <h2 class="text-2xl font-bold group-hover:underline">
+                        {post.title}
+                      </h2>
+                    </div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </Container>
+        </main>
+      </Layout>
     </>
   );
 }

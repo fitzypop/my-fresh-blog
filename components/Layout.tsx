@@ -1,15 +1,22 @@
-import { AppProps } from "$fresh/server.ts";
 import { Head, IS_BROWSER } from "$fresh/runtime.ts";
 import { site } from "../utils/site.ts";
 import { Footer } from "../components/Footer.tsx";
+import { ComponentChildren } from "preact";
 
-export default function App({ Component }: AppProps) {
+export interface LayoutProps {
+  title?: string;
+  children: ComponentChildren;
+}
+
+export function Layout(props: LayoutProps) {
+  const title = props.title ? `${site.title} - ${props.title}` : site.title;
+
   return (
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>{site.title}</title>
-        <meta name="title" content={site.title} />
+        <title>{title}</title>
+        <meta name="title" content={title} />
         <meta name="description" content={site.description} />
         {/* Theme */}
         <meta name="theme-color" content="#000" />
@@ -17,7 +24,7 @@ export default function App({ Component }: AppProps) {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
 
-        <meta property="og:title" content={site.title} />
+        <meta property="og:title" content={title} />
         <meta property="og:description" content={site.description} />
         <meta property="og:image" content={site.ogImage} />
         <meta
@@ -30,7 +37,7 @@ export default function App({ Component }: AppProps) {
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content={site.title} />
+        <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={site.description} />
         <meta property="twitter:image" content={site.ogImage} />
       </Head>
@@ -39,7 +46,7 @@ export default function App({ Component }: AppProps) {
           class="min-h-screen grid grid-cols-1 bg-default text-white"
           style="grid-template-rows: auto 1fr auto;"
         >
-          <Component />
+          {props.children}
           <Footer />
         </div>
       </body>

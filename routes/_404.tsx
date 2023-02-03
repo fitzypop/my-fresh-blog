@@ -1,4 +1,5 @@
 import { Header } from "../components/Header.tsx";
+import { Layout } from "../components/Layout.tsx";
 
 export function ServerCodePage(
   props: { serverCode: number; codeDescription: string },
@@ -29,9 +30,11 @@ export function ServerCodePage(
 
 export default function PageNotFound() {
   return (
-    <ServerCodePage
-      serverCode={404}
-      codeDescription={"We couldn't find the page you're looking for."}
-    />
+    <Layout>
+      <ServerCodePage
+        serverCode={404}
+        codeDescription={"We couldn't find the page you're looking for."}
+      />
+    </Layout>
   );
 }
