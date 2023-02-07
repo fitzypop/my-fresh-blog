@@ -5,7 +5,7 @@ published_at: 2023-01-13
 
 ## Welcome to my first blog site
 
-Sup. I'm Fitzypop, and I've never written an actual blog site before. Okay, I technically didn't build it, and used a Template off 
+Sup. I'm Fitzypop, and I've never written an actual blog site before. Okay, I didn't write the structure of this blog myself, and used a Template off 
 github, but everything after that initial template is all my work.
 
 If this was a serious blog, I would have gone with a mkdocs. Or maybe hugo, or some other template / markdown based system. 
@@ -40,13 +40,13 @@ Dev tools have really come along way, even from back in 2016 when I started codi
 
 My initial thoughts on tailwind was probably similar to a lot of devs:
 
-- 'How do you write generic styles?'
+- 'How do you write generic styles?'  
   Don't. Write and reuse components. If really necessary, write wrapper components.
-- 'You gotta compile it'
-  Yeah? Samething applies to most bleeding edge js technology. 
+- 'You gotta compile it'  
+  Yeah? Samething applies to most bleeding edge js technology.  
   Use Deno + Fresh
-- 'I can't remember all the new keywords, shortcuts and functions'
-  Neithes can I. But there are plenty of tailwind cheatsheets online.
+- 'I can't remember all the new keywords, shortcuts and functions'  
+  Neithes can I. But there are plenty of tailwind cheatsheets online.  
   There's probably an offline version you can download too.
 
 At my day job, we're not using tailwind. I'm actually not entirely sure what we're using, but it's not as seemless as tailwind.
