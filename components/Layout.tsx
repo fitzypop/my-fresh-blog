@@ -43,7 +43,7 @@ export function Layout(props: LayoutProps) {
       </Head>
       <body class="font-sans leading-normal tracking-normal">
         <div
-          class="min-h-screen grid grid-cols-1 bg-default text-white"
+          class="min-h-screen grid grid-cols-1 bg-default text-gray-300"
           style="grid-template-rows: auto 1fr auto;"
         >
           {props.children}

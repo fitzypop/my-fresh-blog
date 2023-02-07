@@ -38,7 +38,7 @@ export default function Home(props: PageProps<Data>) {
                       })}
                     </time>
                     <div class="sm:col-span-2">
-                      <h2 class="text-2xl font-bold group-hover:underline">
+                      <h2 class="text-2xl font-bold group-hover:underline text-gray-100">
                         {post.title}
                       </h2>
                     </div>

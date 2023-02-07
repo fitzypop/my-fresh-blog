@@ -27,7 +27,9 @@ export default function PostPage(props: PageProps<Data>) {
           {post
             ? (
               <Container>
-                <h1 class="font-bold text-5xl pt-12">{post.title}</h1>
+                <h1 class="font-bold text-5xl pt-12 text-gray-100">
+                  {post.title}
+                </h1>
                 <time class="inline-block mt-4">
                   {new Date(post.publishedAt).toLocaleDateString("en-us", {
                     year: "numeric",
@@ -37,7 +39,7 @@ export default function PostPage(props: PageProps<Data>) {
                 </time>
                 <style dangerouslySetInnerHTML={{ __html: gfm.CSS }} />
                 <article
-                  class="mt-12 markdown-body !bg-default !text-white"
+                  class="mt-12 markdown-body !bg-default !text-gray-300"
                   dangerouslySetInnerHTML={{ __html: gfm.render(post.content) }}
                 />
               </Container>
