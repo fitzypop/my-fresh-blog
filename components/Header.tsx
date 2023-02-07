@@ -6,6 +6,7 @@ export function Header() {
       <div class="px-4 max-w-screen-md ">
         <a
           href="/"
+          rel="noopener noreferrer"
           class="text-2xl font-bold hover:text-underline flex items-center gap-3"
         >
           <img

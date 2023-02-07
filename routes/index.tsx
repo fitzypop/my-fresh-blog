@@ -29,6 +29,7 @@ export default function Home(props: PageProps<Data>) {
                   <a
                     href={`/blog/${post.slug}`}
                     class="py-12 pl-5 group grid sm:grid-cols-3"
+                    rel="noopener noreferrer"
                   >
                     <time class="">
                       {new Date(post.publishedAt).toLocaleDateString("en-us", {

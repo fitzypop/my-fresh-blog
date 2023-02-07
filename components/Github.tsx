@@ -1,5 +1,6 @@
 import { ComponentChildren, JSX } from "preact";
 import { site } from "../utils/site.ts";
+import { FlexRowCenter } from "./Flex.tsx";
 
 interface GHSvgProps {
   class?: string;
@@ -36,10 +37,10 @@ export function Github(props: GithubIconProps): JSX.Element {
     >
       {props.children
         ? (
-          <div class="bg-[#1C1C1C] w-[120px] h-[37px] flex items-center justify-center gap-2.5">
+          <FlexRowCenter class="bg-[#1C1C1C] w-[120px] h-[37px] gap-2.5">
             {ghsvg}
             {props.children}
-          </div>
+          </FlexRowCenter>
         )
         : (
           ghsvg
