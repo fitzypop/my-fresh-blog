@@ -18,38 +18,36 @@ export const handler: Handlers<Data> = {
 export default function Home(props: PageProps<Data>) {
   const { posts } = props.data;
   return (
-    <>
-      <Layout>
-        <HomeHeader />
-        <main>
-          <Container>
-            <ul>
-              {posts.map((post) => (
-                <li class="border-t">
-                  <a
-                    href={`/blog/${post.slug}`}
-                    class="py-12 pl-5 group grid sm:grid-cols-3"
-                    rel="noopener noreferrer"
-                  >
-                    <time class="">
-                      {new Date(post.publishedAt).toLocaleDateString("en-us", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </time>
-                    <div class="sm:col-span-2">
-                      <h2 class="text-2xl font-bold group-hover:underline text-gray-100">
-                        {post.title}
-                      </h2>
-                    </div>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </Container>
-        </main>
-      </Layout>
-    </>
+    <Layout>
+      <HomeHeader />
+      <main>
+        <Container>
+          <ul>
+            {posts.map((post) => (
+              <li class="border-t">
+                <a
+                  href={`/blog/${post.slug}`}
+                  class="py-12 pl-5 group grid sm:grid-cols-3"
+                  rel="noopener noreferrer"
+                >
+                  <time class="">
+                    {new Date(post.publishedAt).toLocaleDateString("en-us", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
+                  <div class="sm:col-span-2">
+                    <h2 class="text-2xl font-bold group-hover:underline text-gray-100">
+                      {post.title}
+                    </h2>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </main>
+    </Layout>
   );
 }

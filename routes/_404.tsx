@@ -6,7 +6,7 @@ export function ServerCodePage(
   props: { serverCode: number; codeDescription: string },
 ) {
   return (
-    <>
+    <Layout>
       <Header />
       <main>
         <FlexRowCenter class="w-full mt-10">
@@ -27,17 +27,15 @@ export function ServerCodePage(
           </div>
         </FlexRowCenter>
       </main>
-    </>
+    </Layout>
   );
 }
 
 export default function PageNotFound() {
   return (
-    <Layout>
-      <ServerCodePage
-        serverCode={404}
-        codeDescription={"We couldn't find the page you're looking for."}
-      />
-    </Layout>
+    <ServerCodePage
+      serverCode={404}
+      codeDescription={"We couldn't find the page you're looking for."}
+    />
   );
 }
