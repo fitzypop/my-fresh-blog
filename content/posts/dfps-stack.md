@@ -5,7 +5,7 @@ published_at:  2023-01-15
 
 ## My new stack of choice
 
-Thanks to Deno's [v1.29 release](https://deno.com/blog/v1.29), npm and custom repos are usable in Deno applications. Results vary between npm packages, but regardless of performance, a new tech stack has been birthed. A framework decades in the making. Knowledge gather from thousands of hours coding, working in and out of every abstraction layer known to js developers. All converging together to create the most open and easily accessible tech stack to the average developer, we now have:
+Thanks to Deno's [v1.28 release](https://deno.com/blog/v1.28), npm and custom repos are usable in Deno applications. Results vary between npm packages, but regardless of performance, a new tech stack has been birthed. A framework decades in the making. Knowledge gather from thousands of hours coding, working in and out of every abstraction layer known to js developers. All converging together to create the most open and easily accessible tech stack to the average developer, we now have:
 
 # DFPS: Deno, Fresh, Prisma, and Supabase!
 
