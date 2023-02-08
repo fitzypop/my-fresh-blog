@@ -33,7 +33,7 @@ export function Github(props: GithubIconProps): JSX.Element {
       class="hover:underline"
       target="_blank"
       rel="noopener noreferrer"
-      href={props.to || site.viewSourceUrl}
+      href={props.to || site.githubUrl}
     >
       {props.children
         ? (

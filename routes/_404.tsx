@@ -21,7 +21,7 @@ export function ServerCodePage(
 
             <p class="p-4">
               <a href="/" rel="noopener noreferrer" class="hover:underline">
-                Back to the Homepage
+                Back to Blog
               </a>
             </p>
           </div>
