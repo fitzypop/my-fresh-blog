@@ -3,7 +3,7 @@ import { site } from "../utils/site.ts";
 
 export function Linkedin(
   props: { class?: string },
-): JSX.Element {
+) {
   return (
     <a
       class="hover:no-underline"

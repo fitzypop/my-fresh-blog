@@ -1,4 +1,4 @@
-import { ComponentChildren, JSX } from "preact";
+import { ComponentChildren } from "preact";
 import { site } from "../utils/site.ts";
 import { FlexRowCenter } from "./Flex.tsx";
 
@@ -6,7 +6,7 @@ interface GHSvgProps {
   class?: string;
 }
 
-function GHSvg(props: GHSvgProps): JSX.Element {
+function GHSvg(props: GHSvgProps) {
   return (
     <svg
       class={props.class}
@@ -26,7 +26,7 @@ export interface GithubIconProps extends GHSvgProps {
   children?: ComponentChildren;
 }
 
-export function Github(props: GithubIconProps): JSX.Element {
+export function Github(props: GithubIconProps) {
   const ghsvg = <GHSvg class={props.class || ""} />;
   return (
     <a
