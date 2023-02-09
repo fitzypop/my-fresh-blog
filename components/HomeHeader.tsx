@@ -11,7 +11,7 @@ export function HomeHeader() {
       class="pb-3 bg-gradient-to-tl from-orange-500 to-sky-500 text-black"
     >
       <Container>
-        <div class="flex flex-col items-center mt-10">
+        <div class="flex flex-col mt-5">
           <FlexRowStart class="w-full gap-5">
             <img
               src="/cool.jpeg"
@@ -25,13 +25,13 @@ export function HomeHeader() {
             </h1>
           </FlexRowStart>
 
-          <FlexRowStart class="w-full pl-5 mt-8">
+          <FlexRowStart class="w-full pl-5 mt-5">
             <h2 class="text-2xl">
               Sup. I'm Fitzypop. I write code, and blogs sometimes...
             </h2>
           </FlexRowStart>
 
-          <FlexRowStart class="w-full pl-5 mt-4 gap-4">
+          <FlexRowStart class="w-full pl-5 mt-5 gap-5">
             <Github
               class="h-8 w-8 hover:text-gray-600"
               to="https://github.com/fitzypop"

@@ -6,7 +6,7 @@ export function Linkedin(
 ): JSX.Element {
   return (
     <a
-      class="hover:underline"
+      class="hover:no-underline"
       target="_blank"
       rel="noopener noreferrer"
       href={site.linkedinUrl}

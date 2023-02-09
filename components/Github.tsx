@@ -30,14 +30,14 @@ export function Github(props: GithubIconProps): JSX.Element {
   const ghsvg = <GHSvg class={props.class || ""} />;
   return (
     <a
-      class="hover:underline"
+      class="hover:no-underline "
       target="_blank"
       rel="noopener noreferrer"
       href={props.to || site.githubUrl}
     >
       {props.children
         ? (
-          <FlexRowCenter class="bg-[#1C1C1C] w-[120px] h-[37px] gap-2.5">
+          <FlexRowCenter class="bg-[#1C1C1C] w-[120px] h-[37px] gap-2.5 rounded-md !text-white">
             {ghsvg}
             {props.children}
           </FlexRowCenter>
