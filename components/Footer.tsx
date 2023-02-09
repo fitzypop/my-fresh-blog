@@ -5,10 +5,10 @@ import { FlexRowCenter } from "./Flex.tsx";
 export function Footer() {
   return (
     <footer>
-      <FlexRowCenter class="w-full mt-24 sm:!mt-28 mb-4 gap-5">
+      <FlexRowCenter class="w-full my-4 gap-2">
         <p>&copy; 2023 {site.copyrightName}</p>
         <p>•</p>
-        <Github class="h-5 w-5 text-white">
+        <Github class="h-5 w-5">
           Source
         </Github>
         <p>•</p>

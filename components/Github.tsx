@@ -37,7 +37,7 @@ export function Github(props: GithubIconProps): JSX.Element {
     >
       {props.children
         ? (
-          <FlexRowCenter class="bg-[#1C1C1C] w-[120px] h-[37px] gap-2.5 rounded-md !text-white">
+          <FlexRowCenter class="bg-[#1C1C1C] w-[120px] h-[37px] gap-3 rounded-md !text-white">
             {ghsvg}
             {props.children}
           </FlexRowCenter>

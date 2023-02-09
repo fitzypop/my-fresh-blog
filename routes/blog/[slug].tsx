@@ -38,7 +38,7 @@ export default function PostPage(props: PageProps<Data>) {
               </time>
               <style dangerouslySetInnerHTML={{ __html: gfm.CSS }} />
               <div
-                class="mt-12 markdown-body !bg-default !text-gray-300"
+                class="my-12 markdown-body !bg-default !text-gray-300"
                 dangerouslySetInnerHTML={{ __html: gfm.render(post.content) }}
               >
               </div>
