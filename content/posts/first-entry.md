@@ -1,6 +1,7 @@
 ---
 title: First entry
 published_at: 2023-01-13
+snippet: My first blog post (mostly tests)
 ---
 
 ## Welcome to my first blog site

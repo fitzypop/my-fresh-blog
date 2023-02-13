@@ -6,6 +6,7 @@ export interface Post {
   title: string;
   publishedAt: Date;
   content: string;
+  snippet: string;
 }
 
 export async function loadPost(slug: string): Promise<Post | null> {
@@ -22,16 +23,16 @@ export async function loadPost(slug: string): Promise<Post | null> {
   }
   const { attrs, body } = extract(text);
   const params = attrs as Record<string, string>;
-  const publishedAt = new Date(params.published_at);
   return {
     slug,
     title: params.title,
-    publishedAt,
+    publishedAt: new Date(params.published_at),
     content: body,
+    snippet: params.snippet,
   };
 }
 
-export async function listPosts(): Promise<Post[]> {
+export async function getPosts(): Promise<Post[]> {
   const promises = [];
   for await (const entry of Deno.readDir(site.postsPath)) {
     const slug = entry.name.replace(".md", "");

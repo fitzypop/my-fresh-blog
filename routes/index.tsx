@@ -1,5 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { listPosts, Post } from "../utils/posts.ts";
+import { getPosts, Post } from "../utils/posts.ts";
 import { Container } from "../components/Container.tsx";
 import { HomeHeader } from "../components/HomeHeader.tsx";
 import { Layout } from "../components/Layout.tsx";
@@ -10,8 +10,8 @@ interface Data {
 
 export const handler: Handlers<Data> = {
   async GET(_req, ctx) {
-    const posts = await listPosts();
-    return ctx.render({ ...ctx.state, posts });
+    const posts = await getPosts();
+    return ctx.render({ posts });
   },
 };
 

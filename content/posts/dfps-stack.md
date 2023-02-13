@@ -1,6 +1,7 @@
 ---
 title: The DFPS Stack
 published_at:  2023-01-15
+snippet: The newest Deno tech stack, DFPS.
 ---
 
 ## My new stack of choice
