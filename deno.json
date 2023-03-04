@@ -10,7 +10,7 @@
   },
   "fmt": {
     "files": {
-      "exclude": ["README.md", "content/"]
+      "exclude": ["README.md", "static/content/"]
     }
   }
 }
