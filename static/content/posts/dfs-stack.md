@@ -4,7 +4,7 @@ published_at:  2023-03-03
 snippet: "Deno Deploy, Fresh, and Supabase."
 ---
 
-## Wait, Deja vue?
+## Wait, Deja vu?
 
 In my previous post [here](https://fitzypop.deno.dev/blog/dfps-stack), I talked about DFPS stack, which is Deno, Fresh, Prisma, and Supabase. After using this stack in a couple more tiny projects, I found Prisma to be completely unneeded.
 
