@@ -1,4 +1,4 @@
-import { site } from "../utils/site.ts";
+import { settings } from "@/utils/constants.ts";
 
 export function Header() {
   return (
@@ -19,7 +19,7 @@ export function Header() {
             height="100"
             class="w(12 md:12) h(12 md:12) rounded-full bg-white"
           />
-          {site.title}
+          {settings.title}
         </a>
       </div>
     </header>

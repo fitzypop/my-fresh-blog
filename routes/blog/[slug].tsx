@@ -1,10 +1,10 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import * as gfm from "$gfm";
-import { Container } from "../../components/Container.tsx";
-import { loadPost, Post } from "../../utils/posts.ts";
-import { Header } from "../../components/Header.tsx";
-import { ServerCodePage } from "../_404.tsx";
-import { Layout } from "../../components/Layout.tsx";
+import { Container } from "@/components/Container.tsx";
+import { loadPost, Post } from "@/utils/posts.ts";
+import { Header } from "@/components/Header.tsx";
+import { ServerCodePage } from "@/routes/_404.tsx";
+import { Layout } from "@/components/Layout.tsx";
 import { Head } from "$fresh/runtime.ts";
 
 interface Data {

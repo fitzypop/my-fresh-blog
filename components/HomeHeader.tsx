@@ -1,8 +1,8 @@
-import { Container } from "./Container.tsx";
-import { site } from "../utils/site.ts";
-import { Github } from "./Github.tsx";
-import { Linkedin } from "./Linkedin.tsx";
-import { FlexRowStart } from "./Flex.tsx";
+import { Container } from "@/components/Container.tsx";
+import { settings } from "@/utils/constants.ts";
+import { Github } from "@/components/Github.tsx";
+import { Linkedin } from "@/components/Linkedin.tsx";
+import { FlexRowStart } from "@/components/Flex.tsx";
 
 export function HomeHeader() {
   return (
@@ -21,7 +21,7 @@ export function HomeHeader() {
               class="w(24 md:32) h(24 md:32) rounded-full bg-black"
             />
             <h1 class="text-4xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-bold">
-              {site.title}
+              {settings.title}
             </h1>
           </FlexRowStart>
 

@@ -1,6 +1,6 @@
 import { Head, IS_BROWSER } from "$fresh/runtime.ts";
-import { site } from "../utils/site.ts";
-import { Footer } from "../components/Footer.tsx";
+import { settings } from "@/utils/constants.ts";
+import { Footer } from "@/components/Footer.tsx";
 import { ComponentChildren } from "preact";
 
 export interface LayoutProps {
@@ -9,7 +9,9 @@ export interface LayoutProps {
 }
 
 export function Layout(props: LayoutProps) {
-  const title = props.title ? `${site.title} - ${props.title}` : site.title;
+  const title = props.title
+    ? `${settings.title} - ${props.title}`
+    : settings.title;
 
   return (
     <html class="dark">
@@ -17,7 +19,7 @@ export function Layout(props: LayoutProps) {
         {/* Primary Meta Tags */}
         <title>{title}</title>
         <meta name="title" content={title} />
-        <meta name="description" content={site.description} />
+        <meta name="description" content={settings.description} />
         {/* Theme */}
         <meta name="theme-color" content="#000" />
 
@@ -25,8 +27,8 @@ export function Layout(props: LayoutProps) {
         <meta property="og:type" content="website" />
 
         <meta property="og:title" content={title} />
-        <meta property="og:description" content={site.description} />
-        <meta property="og:image" content={site.ogImage} />
+        <meta property="og:description" content={settings.description} />
+        <meta property="og:image" content={settings.ogImage} />
         <meta
           property="og:url"
           content={`https://fitzypop.deno.dev/${
@@ -38,8 +40,8 @@ export function Layout(props: LayoutProps) {
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={site.description} />
-        <meta property="twitter:image" content={site.ogImage} />
+        <meta property="twitter:description" content={settings.description} />
+        <meta property="twitter:image" content={settings.ogImage} />
       </Head>
       <body class="dark:bg-black dark:text-white font-sans leading-normal tracking-normal">
         <div

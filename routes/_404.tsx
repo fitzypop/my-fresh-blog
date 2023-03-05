@@ -1,6 +1,6 @@
-import { FlexRowCenter } from "../components/Flex.tsx";
-import { Header } from "../components/Header.tsx";
-import { Layout } from "../components/Layout.tsx";
+import { FlexRowCenter } from "@/components/Flex.tsx";
+import { Header } from "@/components/Header.tsx";
+import { Layout } from "@/components/Layout.tsx";
 
 export function ServerCodePage(
   props: { serverCode: number; codeDescription: string },

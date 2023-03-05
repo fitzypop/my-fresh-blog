@@ -1,8 +1,8 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { getPosts, Post } from "../utils/posts.ts";
-import { Container } from "../components/Container.tsx";
-import { HomeHeader } from "../components/HomeHeader.tsx";
-import { Layout } from "../components/Layout.tsx";
+import { getPosts, Post } from "@/utils/posts.ts";
+import { Container } from "@/components/Container.tsx";
+import { HomeHeader } from "@/components/HomeHeader.tsx";
+import { Layout } from "@/components/Layout.tsx";
 
 interface Data {
   posts: Post[];

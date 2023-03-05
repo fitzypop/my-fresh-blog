@@ -1,5 +1,5 @@
 import { extract } from "$std/encoding/front_matter.ts";
-import { site } from "./site.ts";
+import { settings } from "@/utils/constants.ts";
 
 export interface Post {
   slug: string;
@@ -13,7 +13,7 @@ export async function loadPost(slug: string): Promise<Post | null> {
   let text: string;
   try {
     text = await Deno.readTextFile(
-      `${site.postsPath}/${decodeURIComponent(slug)}.md`,
+      `${settings.postsPath}/${decodeURIComponent(slug)}.md`,
     );
   } catch (err) {
     if (err instanceof Deno.errors.NotFound) {
@@ -34,7 +34,7 @@ export async function loadPost(slug: string): Promise<Post | null> {
 
 export async function getPosts(): Promise<Post[]> {
   const promises = [];
-  for await (const entry of Deno.readDir(site.postsPath)) {
+  for await (const entry of Deno.readDir(settings.postsPath)) {
     const slug = entry.name.replace(".md", "");
     promises.push(loadPost(slug));
   }

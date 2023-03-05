@@ -1,5 +1,4 @@
-import { JSX } from "preact";
-import { site } from "../utils/site.ts";
+import { settings } from "@/utils/constants.ts";
 
 export function Linkedin(
   props: { class?: string },
@@ -9,7 +8,7 @@ export function Linkedin(
       class="hover:no-underline"
       target="_blank"
       rel="noopener noreferrer"
-      href={site.linkedinUrl}
+      href={settings.linkedinUrl}
     >
       <svg
         class={props.class}
