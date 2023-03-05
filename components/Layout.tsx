@@ -12,7 +12,7 @@ export function Layout(props: LayoutProps) {
   const title = props.title ? `${site.title} - ${props.title}` : site.title;
 
   return (
-    <>
+    <html class="dark">
       <Head>
         {/* Primary Meta Tags */}
         <title>{title}</title>
@@ -41,7 +41,7 @@ export function Layout(props: LayoutProps) {
         <meta property="twitter:description" content={site.description} />
         <meta property="twitter:image" content={site.ogImage} />
       </Head>
-      <body class="font-sans leading-normal tracking-normal">
+      <body class="dark:bg-black dark:text-white font-sans leading-normal tracking-normal">
         <div
           class="min-h-screen grid grid-cols-1 bg-default text-gray-300"
           style="grid-template-rows: auto 1fr auto;"
@@ -50,6 +50,6 @@ export function Layout(props: LayoutProps) {
           <Footer />
         </div>
       </body>
-    </>
+    </html>
   );
 }
