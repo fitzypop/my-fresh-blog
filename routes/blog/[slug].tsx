@@ -29,35 +29,30 @@ export default function PostPage(props: PageProps<Data>) {
       <Layout title={post?.title}>
         <Header />
         <main>
-          {post
-            ? (
-              <Container>
-                <h1 class="font-bold text-5xl pt-12 text-gray-100">
-                  {post.title}
-                </h1>
-                <time class="inline-block mt-4">
-                  {new Date(post.publishedAt).toLocaleDateString("en-us", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </time>
-                <div class="mt-4">
-                  {post.snippet}
-                </div>
-                <div
-                  class="mt-8 mb-12 markdown-body !bg-default !text-gray-300"
-                  dangerouslySetInnerHTML={{ __html: gfm.render(post.content) }}
-                >
-                </div>
-              </Container>
-            )
-            : (
-              <ServerCodePage
-                serverCode={404}
-                codeDescription={"We couldn't find the post you're looking for."}
-              />
-            )}
+          {post ? (
+            <Container>
+              <h1 class="font-bold text-5xl pt-12 text-gray-100">
+                {post.title}
+              </h1>
+              <time class="inline-block mt-4">
+                {new Date(post.publishedAt).toLocaleDateString("en-us", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+              <div class="mt-4">{post.snippet}</div>
+              <div
+                class="mt-8 mb-12 markdown-body !bg-default !text-gray-300"
+                dangerouslySetInnerHTML={{ __html: gfm.render(post.content) }}
+              ></div>
+            </Container>
+          ) : (
+            <ServerCodePage
+              serverCode={404}
+              codeDescription={"We couldn't find the post you're looking for."}
+            />
+          )}
         </main>
       </Layout>
     </>

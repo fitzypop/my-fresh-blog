@@ -2,9 +2,10 @@ import { FlexRowCenter } from "@/components/Flex.tsx";
 import { Header } from "@/components/Header.tsx";
 import { Layout } from "@/components/Layout.tsx";
 
-export function ServerCodePage(
-  props: { serverCode: number; codeDescription: string },
-) {
+export function ServerCodePage(props: {
+  serverCode: number;
+  codeDescription: string;
+}) {
   return (
     <Layout>
       <Header />
@@ -15,9 +16,7 @@ export function ServerCodePage(
               {props.serverCode}
             </h1>
 
-            <p class="p-4 text-2xl md:text-3xl">
-              {props.codeDescription}
-            </p>
+            <p class="p-4 text-2xl md:text-3xl">{props.codeDescription}</p>
 
             <p class="p-4">
               <a href="/" rel="noopener noreferrer" class="hover:underline">

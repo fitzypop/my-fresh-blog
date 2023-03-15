@@ -13,7 +13,7 @@ export async function loadPost(slug: string): Promise<Post | null> {
   let text: string;
   try {
     text = await Deno.readTextFile(
-      `${settings.postsPath}/${decodeURIComponent(slug)}.md`,
+      `${settings.postsPath}/${decodeURIComponent(slug)}.md`
     );
   } catch (err) {
     if (err instanceof Deno.errors.NotFound) {
@@ -38,7 +38,7 @@ export async function getPosts(): Promise<Post[]> {
     const slug = entry.name.replace(".md", "");
     promises.push(loadPost(slug));
   }
-  const posts = await Promise.all(promises) as Post[];
+  const posts = (await Promise.all(promises)) as Post[];
   posts.sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
   return posts;
 }
