@@ -30,6 +30,11 @@ export function HomeHeader() {
               Sup. I'm Fitzypop. I write code, and blogs sometimes...
             </h2>
           </FlexRowStart>
+          <FlexRowStart class="w-full pl-5">
+            <p class="">I'm currently looking for work. If you need a Software Engineer, <a class="text-blue-700 hover:underline"
+              href="https://drive.google.com/file/d/1e-1VlXroNucB017A9B7EQoQmOHZfw3WP/view?usp=sharing"
+              target="_blank" rel="noopener noreferrer">my Resumè</a> is available.</p>
+          </FlexRowStart>
 
           <FlexRowStart class="w-full pl-5 mt-5 gap-5">
             <Github
