@@ -4,3 +4,5 @@ gen/
 registries/
 .DS_Store
 dep_analysis_cache*
+# Fresh build directory
+_fresh/
