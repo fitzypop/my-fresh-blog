@@ -6,7 +6,7 @@ snippet: "Deno Deploy, Fresh, and Supabase."
 
 ## Wait, Deja vu?
 
-In my previous post [here](https://fitzypop.deno.dev/blog/dfps-stack), I talked about DFPS stack, which is Deno, Fresh, Prisma, and Supabase. After using this stack in a couple more tiny projects, I found Prisma to be completely unneeded.
+In my previous post [here](https://jfitzy.deno.dev/blog/dfps-stack), I talked about DFPS stack, which is Deno, Fresh, Prisma, and Supabase. After using this stack in a couple more tiny projects, I found Prisma to be completely unneeded.
 
 Supabase is just that awesome, and maybe my current requirements aren't advanced enough to need an orm like Prisma. Supabase provides soooooo many things out of the box for developers. An sdk that works with Deno, a Postgresql database, multiple types of user auth, etc.
 

@@ -1,5 +1,4 @@
 import { ComponentChildren } from "preact";
-import { settings } from "@/utils/constants.ts";
 import { FlexRowCenter } from "./Flex.tsx";
 
 interface GHSvgProps {
@@ -21,7 +20,7 @@ function GHSvg(props: GHSvgProps) {
 }
 
 export interface GithubIconProps extends GHSvgProps {
-  to?: string;
+  to: string;
   children?: ComponentChildren;
 }
 
@@ -32,7 +31,7 @@ export function Github(props: GithubIconProps) {
       class="hover:no-underline "
       target="_blank"
       rel="noopener noreferrer"
-      href={props.to || settings.githubUrl}
+      href={props.to}
     >
       {props.children ? (
         <FlexRowCenter class="bg-[#1C1C1C] w-[120px] h-[37px] gap-3 rounded-md !text-white">

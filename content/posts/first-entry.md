@@ -6,7 +6,7 @@ snippet: My first blog post (mostly tests)
 
 ## Welcome to my first blog site
 
-Sup. I'm Fitzypop, and I've never written an actual blog site before. Okay, I didn't write the structure of this blog myself, and used a Template off 
+Sup. I'm Joe Fitzgibbons, and I've never written an actual blog site before. Okay, I didn't write the structure of this blog myself, and used a Template off 
 github, but everything after that initial template is all my work.
 
 If this was a serious blog, I would have gone with a mkdocs. Or maybe hugo, or some other template / markdown based system. 
@@ -59,7 +59,7 @@ I have no idea what the original developers of the blog template were thinking, 
 
 Fuck that. I turned it into flex row and columns. I probably could leverage css grid better, but that gives me something else too work on and still have a better solution to the original.
 
-Now I gotta figure out how to back port it too my new [fresh-blog template](https://github.com/fitzypop/fresh-blog) ...
+Now I gotta figure out how to back port it too my new [fresh-blog template](https://github.com/joe-c00l-fitzy/fresh-blog) ...
 
 ### Social Links
 

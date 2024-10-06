@@ -8,7 +8,7 @@ export function Footer() {
       <FlexRowCenter class="w-full my-4 gap-2">
         <p>&copy; 2023 {settings.copyrightName}</p>
         <p>•</p>
-        <Github class="h-5 w-5">Source</Github>
+        <Github class="h-5 w-5" to={settings.githubProjectUrl}>Source</Github>
         <p>•</p>
         <a
           href="https://fresh.deno.dev"

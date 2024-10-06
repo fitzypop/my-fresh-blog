@@ -37,7 +37,7 @@ export function HomeHeader() {
           </FlexRowStart>
 
           <FlexRowStart class="w-full pl-5 mt-5 gap-5">
-            <Github class="h-8 w-8 hover:text-gray-600" />
+            <Github class="h-8 w-8 hover:text-gray-600" to={settings.githubProfileUrl}/>
             <Linkedin class="h-8 w-8 hover:text-gray-600" />
           </FlexRowStart>
         </div>
