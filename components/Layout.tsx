@@ -31,7 +31,7 @@ export function Layout(props: LayoutProps) {
         <meta property="og:image" content={settings.ogImage} />
         <meta
           property="og:url"
-          content={`https://fitzypop.deno.dev/${
+          content={`https://jfitzy.deno.dev/${
             IS_BROWSER ? window.location.pathname : ""
           }`}
         />
