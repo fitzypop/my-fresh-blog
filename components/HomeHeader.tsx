@@ -27,7 +27,7 @@ export function HomeHeader() {
 
           <FlexRowStart class="w-full pl-5 mt-5">
             <h2 class="text-2xl">
-              Sup. I'm Fitzypop. I write code, and blogs sometimes...
+              Sup. I'm Joe Fitzy. I write code, and blogs sometimes...
             </h2>
           </FlexRowStart>
           <FlexRowStart class="w-full pl-5">
